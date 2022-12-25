@@ -60,7 +60,6 @@ const recognition = new speechRecognition();
 recognition.onresult = (event)=>{
     const current = event.resultIndex;
     const transcript = event.results[current][0].transcript;
-    _content.setAttribute("href", transcript);
     _content.textContent = transcript;
     speakThis(transcript.toLowerCase());
 }
