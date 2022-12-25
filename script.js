@@ -1,5 +1,19 @@
 const _btn = document.getElementById("btn");
 const _content = document.getElementById("content");
+const _nameVar = 'hello krishna';
+
+
+// btn animation 
+
+_btn.onclick = ()=>{
+    _btn.classList.add("active");
+    setTimeout(() => {
+        _btn.classList.remove("active"); 
+    }, 2000);
+}
+
+
+
 
 function speak(sentence){
     const text_speak = new SpeechSynthesisUtterance(sentence);
@@ -46,6 +60,7 @@ const recognition = new speechRecognition();
 recognition.onresult = (event)=>{
     const current = event.resultIndex;
     const transcript = event.results[current][0].transcript;
+    _content.setAttribute("href", transcript);
     _content.textContent = transcript;
     speakThis(transcript.toLowerCase());
 }
@@ -60,12 +75,17 @@ function speakThis(message){
 
     speech.text = "I did not understand what you said please try again";
 
-    if(message.includes('hey') || message.includes('hello') || message.includes("hi")){
+    if(message.includes('hey krishna') || message.includes(_nameVar) || message.includes("hi krishna")){
         const finalText = "Hello Bhakt";
         speech.text = finalText;
     }
-    else if(message.includes('how are you')){
+    else if(message.includes('how are you krishna')){
         const finalText = "I am fine bhakt tell me how can i help you";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('tell me something about yourself')){
+        const finalText = "my name is krishna a cool and javascript voice assistant created by himanshu sharma i am free and host on github platform if you want to know the source code this project go to the https://github.com/himanshu123cool/ website or himanshuportfolio.netlify.app website.";
         speech.text = finalText;
     }
 
@@ -100,8 +120,8 @@ function speakThis(message){
         speech.text = finalText;
     }
 
-    else if(message.includes("search website")){
-        window.open(`https://www.google.com/search?q=${message.replace("https://", "+")}`, "_blank");
+    else if(message.includes("search website "+ message)){
+        window.open(`${message.replace("https://", " ")}`, "_blank");
         const finalText = "This is website you have search" + message;
         speech.text = finalText;
     }
@@ -149,9 +169,3 @@ function speakThis(message){
 
 
 
-_btn.onclick = ()=>{
-    _btn.classList.add("active");
-    setTimeout(() => {
-        _btn.classList.remove("active"); 
-    }, 2000);
-}
