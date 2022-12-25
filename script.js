@@ -108,6 +108,31 @@ function speakThis(message){
         const finalText = "Opening facebook";
         speech.text = finalText;
     }
+    else if(message.includes("open lite")){
+        window.open(`https://www.facebook.com`, "_blank");
+        const finalText = "Opening facebook lite";
+        speech.text = finalText;
+    }
+    else if(message.includes("open messenger")){
+        window.open(`https://www.messenger.com`, "_blank");
+        const finalText = "Opening messenger";
+        speech.text = finalText;
+    }
+    else if(message.includes("open telegram")){
+        window.open(`https://www.telegram.com`, "_blank");
+        const finalText = "Opening telegram";
+        speech.text = finalText;
+    }
+    else if(message.includes("open whatsapp")){
+        window.open(`https://www.whatsapp.com`, "_blank");
+        const finalText = "Opening whatsapp";
+        speech.text = finalText;
+    }
+    else if(message.includes("open whatsapp clone")){
+        window.open(`https://www.whatsapp.com`, "_blank");
+        const finalText = "Opening whatsapp";
+        speech.text = finalText;
+    }
     else if(message.includes("open twitter")){
         window.open(`https://www.twitter.com`, "_blank");
         const finalText = "Opening twitter";
@@ -118,6 +143,41 @@ function speakThis(message){
         const finalText = "Opening youtube";
         speech.text = finalText;
     }
+    else if(message.includes("open flipkart")){
+        window.open(`https://www.flipkart.com`, "_blank");
+        const finalText = "Opening flipkart";
+        speech.text = finalText;
+    }
+    else if(message.includes("open amazon")){
+        window.open(`https://www.amazon.com`, "_blank");
+        const finalText = "Opening amazon";
+        speech.text = finalText;
+    }
+    else if(message.includes("open gpay")){
+        window.open(`https://pay.google.com`, "_blank");
+        const finalText = "Opening google pay";
+        speech.text = finalText;
+    }
+    else if(message.includes("open imobile")){
+        window.open(`https://www.icicibank.com`, "_blank");
+        const finalText = "Opening imobile";
+        speech.text = finalText;
+    }
+    else if(message.includes("open mobikwik")){
+        window.open(`https://www.mobikwik.com`, "_blank");
+        const finalText = "Opening mobikwik";
+        speech.text = finalText;
+    }
+    else if(message.includes("open myntra")){
+        window.open(`https://www.myntra.com`, "_blank");
+        const finalText = "Opening myntra";
+        speech.text = finalText;
+    }
+
+
+
+
+
     else if(message.includes("what is") || message.includes("who is") || message.includes("where is") || ("when was")){
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what I found on internet regarding " + message;
