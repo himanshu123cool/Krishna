@@ -104,22 +104,22 @@ function speakThis(message){
         speech.text = finalText;
     }
     else if(message.includes("open facebook")){
-        window.open(`https://www.fb.com`, "_blank");
+        window.open(`https://www.facebook.com`, "_blank");
         const finalText = "Opening facebook";
         speech.text = finalText;
     }
-    else if(message.includes("open lite")){
-        window.open(`https://www.fb.com`, "_blank");
+    else if(message.includes("open fblite")){
+        window.open(`https://www.facebook.com`, "_blank");
         const finalText = "Opening facebook lite";
         speech.text = finalText;
     }
     else if(message.includes("open messenger")){
-        window.open(`https://www.m.me.com`, "_blank");
+        window.open(`https://www.messenger.com`, "_blank");
         const finalText = "Opening messenger";
         speech.text = finalText;
     }
     else if(message.includes("open telegram")){
-        window.open(`https://www.telegram.dog`, "_blank");
+        window.open(`https://www.telegram.org`, "_blank");
         const finalText = "Opening telegram";
         speech.text = finalText;
     }
@@ -153,12 +153,12 @@ function speakThis(message){
         const finalText = "Opening amazon";
         speech.text = finalText;
     }
-    else if(message.includes("open gpay")){
+    else if(message.includes("open googlepay")){
         window.open(`https://pay.google.com`, "_blank");
         const finalText = "Opening google pay";
         speech.text = finalText;
     }
-    else if(message.includes("open imobile")){
+    else if(message.includes("open icicibankapp")){
         window.open(`https://www.icicibank.com`, "_blank");
         const finalText = "Opening imobile";
         speech.text = finalText;
@@ -173,6 +173,62 @@ function speakThis(message){
         const finalText = "Opening myntra";
         speech.text = finalText;
     }
+    else if(message.includes("open paytm")){
+        window.open(`https://www.paytm.com`, "_blank");
+        const finalText = "Opening paytm";
+        speech.text = finalText;
+    }
+
+    else if(message.includes("open phonepe")){
+        window.open(`https://www.phone.com`, "_blank");
+        const finalText = "Opening phonepe";
+        speech.text = finalText;
+    }
+    else if(message.includes("open swiggy")){
+        window.open(`https://www.swiggy.com`, "_blank");
+        const finalText = "Opening swiggy";
+        speech.text = finalText;
+    }
+    else if(message.includes("open payzapp")){
+        window.open(`https://v.hdfcbank.com`, "_blank");
+        const finalText = "Opening payzapp";
+        speech.text = finalText;
+    }
+    else if(message.includes("open kotak")){
+        window.open(`https://app.paytm.com`, "_blank");
+        const finalText = "Opening kotak";
+        speech.text = finalText;
+    }
+    // else if(message.includes("open paytm")){
+    //     window.open(`https://www.paytm.com`, "_blank");
+    //     const finalText = "Opening paytm";
+    //     speech.text = finalText;
+    // }
+    // else if(message.includes("open paytm")){
+    //     window.open(`https://www.paytm.com`, "_blank");
+    //     const finalText = "Opening paytm";
+    //     speech.text = finalText;
+    // }
+    // else if(message.includes("open paytm")){
+    //     window.open(`https://www.paytm.com`, "_blank");
+    //     const finalText = "Opening paytm";
+    //     speech.text = finalText;
+    // }
+    // else if(message.includes("open paytm")){
+    //     window.open(`https://www.paytm.com`, "_blank");
+    //     const finalText = "Opening paytm";
+    //     speech.text = finalText;
+    // }
+    // else if(message.includes("open paytm")){
+    //     window.open(`https://www.paytm.com`, "_blank");
+    //     const finalText = "Opening paytm";
+    //     speech.text = finalText;
+    // }
+    // else if(message.includes("open paytm")){
+    //     window.open(`https://www.paytm.com`, "_blank");
+    //     const finalText = "Opening paytm";
+    //     speech.text = finalText;
+    // }
 
 
 
