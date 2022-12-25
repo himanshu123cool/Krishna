@@ -128,7 +128,7 @@ function speakThis(message){
         const finalText = "Opening whatsapp";
         speech.text = finalText;
     }
-    else if(message.includes("open whatsapp clone")){
+    else if(message.includes("open whatsappclone")){
         window.open(`https://www.whatsapp.com`, "_blank");
         const finalText = "Opening whatsapp";
         speech.text = finalText;
@@ -153,7 +153,7 @@ function speakThis(message){
         const finalText = "Opening amazon";
         speech.text = finalText;
     }
-    else if(message.includes("open googlepay")){
+    else if(message.includes("open gpay")){
         window.open(`https://pay.google.com`, "_blank");
         const finalText = "Opening google pay";
         speech.text = finalText;
@@ -189,50 +189,51 @@ function speakThis(message){
         const finalText = "Opening swiggy";
         speech.text = finalText;
     }
+    else if(message.includes("open zomato")){
+        window.open(`https://www.zomato.com`, "_blank");
+        const finalText = "Opening zomato";
+        speech.text = finalText;
+    }
     else if(message.includes("open payzapp")){
         window.open(`https://v.hdfcbank.com`, "_blank");
         const finalText = "Opening payzapp";
         speech.text = finalText;
     }
     else if(message.includes("open kotak")){
-        window.open(`https://app.paytm.com`, "_blank");
+        window.open(`https://app.kotak.com`, "_blank");
         const finalText = "Opening kotak";
         speech.text = finalText;
     }
-    // else if(message.includes("open paytm")){
-    //     window.open(`https://www.paytm.com`, "_blank");
-    //     const finalText = "Opening paytm";
-    //     speech.text = finalText;
-    // }
-    // else if(message.includes("open paytm")){
-    //     window.open(`https://www.paytm.com`, "_blank");
-    //     const finalText = "Opening paytm";
-    //     speech.text = finalText;
-    // }
-    // else if(message.includes("open paytm")){
-    //     window.open(`https://www.paytm.com`, "_blank");
-    //     const finalText = "Opening paytm";
-    //     speech.text = finalText;
-    // }
-    // else if(message.includes("open paytm")){
-    //     window.open(`https://www.paytm.com`, "_blank");
-    //     const finalText = "Opening paytm";
-    //     speech.text = finalText;
-    // }
-    // else if(message.includes("open paytm")){
-    //     window.open(`https://www.paytm.com`, "_blank");
-    //     const finalText = "Opening paytm";
-    //     speech.text = finalText;
-    // }
-    // else if(message.includes("open paytm")){
-    //     window.open(`https://www.paytm.com`, "_blank");
-    //     const finalText = "Opening paytm";
-    //     speech.text = finalText;
-    // }
-
-
-
-
+    else if(message.includes("open gmail")){
+        window.open(`https://www.gmail.com`, "_blank");
+        const finalText = "Opening gmail";
+        speech.text = finalText;
+    }
+    else if(message.includes("open location")){
+        window.open(`https://www.maps.google.com`, "_blank");
+        const finalText = "Opening location";
+        speech.text = finalText;
+    }
+    else if(message.includes("open drive")){
+        window.open(`https://drive.google.com`, "_blank");
+        const finalText = "Opening drive";
+        speech.text = finalText;
+    }
+    else if(message.includes("open jio")){
+        window.open(`https://www.jio.com`, "_blank");
+        const finalText = "Opening jio";
+        speech.text = finalText;
+    }
+    else if(message.includes("open saavn")){
+        window.open(`https://www.jiosaavn.com`, "_blank");
+        const finalText = "Opening jiosaavn";
+        speech.text = finalText;
+    }
+    else if(message.includes("open meesho")){
+        window.open(`https://www.meesho.com`, "_blank");
+        const finalText = "Opening meesho";
+        speech.text = finalText;
+    }
 
     else if(message.includes("what is") || message.includes("who is") || message.includes("where is") || ("when was")){
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
