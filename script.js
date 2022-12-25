@@ -104,22 +104,22 @@ function speakThis(message){
         speech.text = finalText;
     }
     else if(message.includes("open facebook")){
-        window.open(`https://www.facebook.com`, "_blank");
+        window.open(`https://www.fb.com`, "_blank");
         const finalText = "Opening facebook";
         speech.text = finalText;
     }
     else if(message.includes("open lite")){
-        window.open(`https://www.facebook.com`, "_blank");
+        window.open(`https://www.fb.com`, "_blank");
         const finalText = "Opening facebook lite";
         speech.text = finalText;
     }
     else if(message.includes("open messenger")){
-        window.open(`https://www.messenger.com`, "_blank");
+        window.open(`https://www.m.me.com`, "_blank");
         const finalText = "Opening messenger";
         speech.text = finalText;
     }
     else if(message.includes("open telegram")){
-        window.open(`https://www.telegram.com`, "_blank");
+        window.open(`https://www.telegram.dog`, "_blank");
         const finalText = "Opening telegram";
         speech.text = finalText;
     }
