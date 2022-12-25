@@ -113,6 +113,11 @@ function speakThis(message){
         const finalText = "Opening twitter";
         speech.text = finalText;
     }
+    else if(message.includes("open youtube")){
+        window.open(`https://www.youtube.com`, "_blank");
+        const finalText = "Opening youtube";
+        speech.text = finalText;
+    }
     else if(message.includes("what is") || message.includes("who is") || message.includes("where is") || ("when was")){
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what I found on internet regarding " + message;
