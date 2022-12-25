@@ -104,12 +104,12 @@ function speakThis(message){
         speech.text = finalText;
     }
     else if(message.includes("open facebook")){
-        window.open(`https://www.facebook.com`, "_blank");
+        window.open(`https://m.facebook.com`, "_blank");
         const finalText = "Opening facebook";
         speech.text = finalText;
     }
     else if(message.includes("open fblite")){
-        window.open(`https://www.facebook.com`, "_blank");
+        window.open(`https://m.facebook.com`, "_blank");
         const finalText = "Opening facebook lite";
         speech.text = finalText;
     }
