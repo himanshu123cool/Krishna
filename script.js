@@ -210,7 +210,7 @@ function speakThis(message){
         speech.text = finalText;
     }
     else if(message.includes("open location")){
-        window.open(`https://www.maps.google.com`, "_blank");
+        window.open(`https://maps.google.com`, "_blank");
         const finalText = "Opening location";
         speech.text = finalText;
     }
